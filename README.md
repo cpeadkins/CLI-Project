@@ -1,4 +1,4 @@
-# CLI Project Coming Soon
+<!-- # CLI Project Coming Soon -->
 
 # Project Description
 # Installation Guide
