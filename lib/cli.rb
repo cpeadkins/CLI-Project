@@ -17,12 +17,12 @@ class CLI
                 puts "**ERROR** '#{user_year}' is an invalid year input. Please re-enter your birth-year. (Format: 'YYYY')"
                 user_year = gets.strip
             end
-            until user_year.to_i < Date.today.year+1 # Why does this not work? Need to prevent users from inputing future years.
-                puts "**ERROR** Unfortunately, this API does not predict future information. Tell me ... what is the future like time-traveler? Your birthyear has been set to #{Date.today.year}!"
+            until user_year.to_i < Date.today.year+1
+                puts "Unfortunately, this API does not predict future information. Tell me ... what is the future like time-traveler? Your birthyear has been set to #{Date.today.year}!"
                 user_year = Date.today.year
             end
             if user_year.to_i < 1995
-                puts "**ERROR** Unfortunately, this API does not contain information before 1995. Congratulations on finding the fountain of youth! Your birthyear is now set to 1996!"
+                puts "Unfortunately, this API does not contain information before 1995. Congratulations on finding the fountain of youth! Your birthyear is now set to 1996!"
                 user_year = 1996
             end
         
