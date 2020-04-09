@@ -6,4 +6,4 @@ require 'json' # java script object notation, interprets (parses) the response w
 require_relative '../lib/api'
 require_relative '../lib/cli'
 
-CLI.new.call 
+CLI.new.call_cli
