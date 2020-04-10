@@ -14,10 +14,14 @@ class CLI
         puts ""
         puts "What is your birth-year? (Format: 'YYYY')"
         user_year = gets.strip
-            until user_year !~ /\D/ #Is there a way to avoid empty space? Invalid.
+            until user_year !~ /\D/ 
                 puts "**ERROR** '#{user_year}' is an invalid year input. Please re-enter your birth-year. (Format: 'YYYY')"
                 user_year = gets.strip
             end
+            # until user_year.include?(" ")
+            #     puts "**ERROR** Blank spaces are an invalid year input. Please re-enter your birth-year. (Format: 'YYYY')"
+            #     user_year = gets.strip
+            # end
             until user_year.length == 4
                 puts "**ERROR** '#{user_year}' is an invalid year input. Please re-enter your birth-year. (Format: 'YYYY')"
                 user_year = gets.strip
@@ -34,10 +38,14 @@ class CLI
         puts ""
         puts "What is your birth-month? (Format: 'MM')"
         user_month = gets.strip
-            until user_month !~ /\D/ #Is there a way to avoid empty space? Invalid.
+            until user_month !~ /\D/ 
                 puts "**ERROR** '#{user_month}' is an invalid input. Please re-enter your birth-month. (Format: 'MM')"
                 user_month = gets.strip
             end
+            # until user_month.include?(" ")
+            #     puts "**ERROR** Blank spaces are an invalid year input. Please re-enter your birth-month. (Format: 'MM')"
+            #     user_month = gets.strip
+            # end
             until user_month.length == 2
                 puts "**ERROR** '#{user_month}' is an invalid input. Please re-enter your birth-month. (Format: 'MM')"
                 user_month = gets.strip
@@ -50,16 +58,20 @@ class CLI
         puts ""
         puts "What is your birth-day? (Format: 'DD')"
         user_day = gets.strip
-            until user_day !~ /\D/ #Is there a way to avoid empty space? Invalid.
-                puts "**ERROR** '#{user_day}' is an invalid input. Please re-enter your birth-month. (Format: 'DD')"
+            until user_day !~ /\D/ 
+                puts "**ERROR** '#{user_day}' is an invalid input. Please re-enter your birth-day. (Format: 'DD')"
                 user_day = gets.strip
             end
+            # until user_day.include?(" ")
+            #     puts "**ERROR** '#{user_day}' is an invalid input. Please re-enter your birth-day. (Format: 'DD')"
+            #     user_day = gets.strip
+            # end
             until user_day.length == 2
-                puts "**ERROR** '#{user_day}' is an invalid input. Please re-enter your birth-month. (Format: 'DD')"
+                puts "**ERROR** '#{user_day}' is an invalid input. Please re-enter your birth-day. (Format: 'DD')"
                 user_day = gets.strip
             end
             until user_day.to_i <= 31
-                puts "**ERROR** '#{user_day}' is an invalid input. Please re-enter your birth-month. (Format: 'DD', up to 31)"
+                puts "**ERROR** '#{user_day}' is an invalid input. Please re-enter your birth-day. (Format: 'DD', up to 31)"
                 user_day = gets.strip
             end
         
