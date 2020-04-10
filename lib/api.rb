@@ -12,6 +12,7 @@ class API
         puts "Title: #{query_title}"
         puts "Description: #{query_explanation}"
         puts "Image URL: #{query_url}"
+        puts ""
     end
 
 end
