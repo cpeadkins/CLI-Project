@@ -1,6 +1,11 @@
 class CLI
     def call_cli
+        sleep(1)
+        puts ""
+        puts "*******************************************************************"
         puts "Welcome to the APOD (Astronomy Picture of the Day) Birthday Finder!"
+        puts "*******************************************************************"
+        sleep(1)
         input_date
     end
     
@@ -66,7 +71,9 @@ class CLI
             abort
         else
             puts ""
+            puts "*****************************************"
             puts "The birthday you entered is #{user_date}."
+            puts "*****************************************"
             puts ""
         end
 
