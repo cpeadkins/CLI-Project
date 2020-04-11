@@ -80,6 +80,10 @@ class CLI
             puts "**ERROR** The date of #{user_date} is invalid or does not exist. Please re-submit."
             input_date
             abort
+        # elsif user_year.to_i == Date.today.year && user_month.to_i < Date.today.month || user_day.to_i < Date.today.day
+        #     puts "**ERROR** The date of #{user_date} is invalid or does not exist. Please re-submit."
+        #     input_date
+        #     abort
         else
             puts ""
             puts "*****************************************"
