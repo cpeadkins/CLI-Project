@@ -1,6 +1,5 @@
 class CLI
     def call_cli
-        sleep(1)
         puts ""
         puts "*******************************************************************"
         puts "Welcome to the APOD (Astronomy Picture of the Day) Birthday Finder!"
