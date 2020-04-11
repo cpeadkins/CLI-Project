@@ -5,14 +5,16 @@ class API
         query_hash = JSON.parse(resp.body,symbolize_names:true)
         query_date = query_hash[:date]
         query_title = query_hash[:title]
-        binding.pry
         query_explanation = query_hash[:explanation]
-        query_url = query_hash[:url]
+        # query_url = query_hash[:url]
         puts ""
         puts "Date: #{query_date}"
         puts "Title: #{query_title}"
         puts "Description: #{query_explanation}"
-        puts "Image URL: #{query_url}"
+        # puts "Image URL: #{query_url}"
+
+        Picture.new(query_hash[:url])
+
         puts ""
     end
 

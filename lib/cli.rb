@@ -1,4 +1,5 @@
 class CLI
+    
     def call_cli
         puts ""
         puts "*******************************************************************"
@@ -87,7 +88,7 @@ class CLI
         else
             puts ""
             puts "*****************************************"
-            puts "The birthday you entered is #{user_date}."
+            puts "The day entered is: #{user_date}."
             puts "*****************************************"
             puts ""
         end
