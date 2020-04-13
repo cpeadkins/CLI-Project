@@ -4,6 +4,8 @@ Full index reference can be found here: https://apod.nasa.gov/apod/archivepixFul
 Program Video Explanation here: https://youtu.be/QUQ8jLQuTKM
 
 ## Installation Guide
+Clone repo
+Bundle install gems
 Requires 'ruby' and 'rest-client' installed.
 Run the application by entering 'ruby bin/run' in the terminal.
 
