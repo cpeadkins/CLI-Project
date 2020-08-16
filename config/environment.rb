@@ -1,0 +1,8 @@
+require 'pry'
+require 'rest-client' # gem that allows us to open/interact with the api
+require 'json' # java script object notation, interprets (parses) the response we get back from the api
+require 'date'
+
+require_relative '../lib/cli'
+require_relative '../lib/api'
+require_relative '../lib/picture'
